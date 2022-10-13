@@ -5,12 +5,12 @@ import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from "yup"
 import ClientAxios from '../config/ClientAxios'
 import Alert from '../components/Alert'
-import UseAuth from '../hooks/UseAuth'
+import useAuth from '../hooks/useAuth'
 
 const Login = () => {
 
     const [alert, setAlert] = useState({})
-    const { setAuth } = UseAuth()
+    const { setAuth } = useAuth()
     const navigate = useNavigate()
     const schema = yup.object({
         email: yup.string().required("Email es requerido").email("Email no valido"),
