@@ -46,7 +46,7 @@ const Register = () => {
   return (
     <>
         <h1 className="text-sky-600 font-black text-6xl">
-            Crea Tu Cuenta en <span className="text-slate-700">UpTask</span>
+            Crea Tu Cuenta en <span className="text-slate-700"></span>
         </h1>
         {
             msg && <Alert alert={alert}/>
