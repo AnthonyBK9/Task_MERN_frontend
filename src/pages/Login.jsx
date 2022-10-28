@@ -42,7 +42,7 @@ const Login = () => {
   return (
     <>
         <h1 className="text-sky-600 font-black text-6xl">
-            Inicia Sesión <span className="text-slate-700">UpTask</span>
+            Inicia Sesión <span className="text-slate-700"></span>
         </h1>
         {
             msg && <Alert alert={alert} />
