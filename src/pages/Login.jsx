@@ -59,11 +59,22 @@ const Login = () => {
                 {errors.password?.message && <p role="alert" className="text-red-600 font-bold">{errors.password?.message}</p>}
             </div>
             <input type="submit" value="Iniciar Sesión" className="w-full bg-sky-700 py-3 text-whote uppercase font-bold text-white rounded hover:cursor-pointer hover:bg-sky-900 transition-colors"/>
+            <nav className="lg:flex flex-col mt-3">
+                <Link to="registrar" className="block my-1 text-slate-600 uppercase text-sm font-bold hover:cursor-pointer hover:text-sky-600 transition-colors">¿No tienes una cuenta? Registrate</Link>
+                <Link to="reestablecer-password" className="block my-1 text-slate-600 uppercase text-sm font-bold hover:cursor-pointer hover:text-sky-600 transition-colors">Recuperar Password</Link>
+            </nav>
         </form>
-        <nav className="lg:flex flex-col">
-            <Link to="registrar" className="block my-1 text-slate-600 uppercase text-sm font-bold hover:cursor-pointer hover:text-sky-600 transition-colors">¿No tienes una cuenta? Registrate</Link>
-            <Link to="reestablecer-password" className="block my-1 text-slate-600 uppercase text-sm font-bold hover:cursor-pointer hover:text-sky-600 transition-colors">Recuperar Password</Link>
-        </nav>
+        <div className="mt-5 bg-slate-100 rounded-lg p-5">
+            <h3 className="text-slate-600 font-bold">Usuarios de prueba</h3>
+            <div>
+                <p className="text-gray-800 font-bold">Usuario: <span className="text-sky-600 font-bold">antonio@gmail.com</span></p>
+                <p className="text-gray-800 font-bold">Password: <span className="text-sky-600 font-bold">antonio1234</span></p>
+            </div>
+            <div>
+                <p className="text-gray-800 font-bold">Usuario: <span className="text-sky-600 font-bold">luis@gmail.com</span></p>
+                <p className="text-gray-800 font-bold">Password: <span className="text-sky-600 font-bold">luis1234</span></p>
+            </div>
+        </div>
     </>
   )
 }

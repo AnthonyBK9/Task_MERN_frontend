@@ -73,11 +73,11 @@ const Register = () => {
                 {errors.confirmPassword?.message && <p role="alert" className="text-red-600 font-bold">{errors.confirmPassword?.message}</p>}
             </div>
             <input type="submit" value="Crear Cuenta" className="w-full bg-sky-700 py-3 text-whote uppercase font-bold text-white rounded hover:cursor-pointer hover:bg-sky-900 transition-colors"/>
+            <nav className="lg:flex flex-col mt-3">
+                <Link to="/" className="block my-1 text-slate-600 uppercase text-sm font-bold hover:cursor-pointer hover:text-sky-600 transition-colors">¿Ya tienes una cuenta? Inicia sesión</Link>
+                <Link to="/reestablecer-password" className="block my-1 text-slate-600 uppercase text-sm font-bold hover:cursor-pointer hover:text-sky-600 transition-colors">Recuperar Password</Link>
+            </nav>
         </form>
-        <nav className="lg:flex flex-col">
-            <Link to="/" className="block my-1 text-slate-600 uppercase text-sm font-bold hover:cursor-pointer hover:text-sky-600 transition-colors">¿Ya tienes una cuenta? Inicia sesión</Link>
-            <Link to="/reestablecer-password" className="block my-1 text-slate-600 uppercase text-sm font-bold hover:cursor-pointer hover:text-sky-600 transition-colors">Recuperar Password</Link>
-        </nav>
     </>
   )
 }

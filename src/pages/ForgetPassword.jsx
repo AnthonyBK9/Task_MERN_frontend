@@ -54,11 +54,12 @@ const ForgetPassword = () => {
                 {errors.email?.message && <p role="alert" className="text-red-600 font-bold">{errors.email?.message}</p>}
             </div>
             <input type="submit" value="Enviar Instrucciones" className="w-full bg-sky-700 py-3 text-whote uppercase font-bold text-white rounded hover:cursor-pointer hover:bg-sky-900 transition-colors"/>
+            <nav className="lg:flex flex-col mt-3">
+                <Link to="/" className="block my-1 text-slate-600 uppercase text-sm font-bold hover:cursor-pointer hover:text-sky-600 transition-colors">Iniciar Sesión</Link>
+                <Link to="/registrar" className="block my-1 text-slate-600 uppercase text-sm font-bold hover:cursor-pointer hover:text-sky-600 transition-colors">¿No tienes una cuenta? Registrate</Link>
+            </nav>
         </form>
-        <nav className="lg:flex flex-col">
-            <Link to="/" className="block my-1 text-slate-600 uppercase text-sm font-bold hover:cursor-pointer hover:text-sky-600 transition-colors">Iniciar Sesión</Link>
-            <Link to="/registrar" className="block my-1 text-slate-600 uppercase text-sm font-bold hover:cursor-pointer hover:text-sky-600 transition-colors">¿No tienes una cuenta? Registrate</Link>
-        </nav>
+       
     </>
   )
 }

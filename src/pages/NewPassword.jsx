@@ -89,15 +89,16 @@ const NewPassword = () => {
                 {errors.confirmPassword?.message && <p role="alert" className="text-red-600 font-bold">{errors.confirmPassword?.message}</p>}
             </div>
             <input type="submit" value="Reestablcer Password" className="w-full bg-sky-700 py-3 text-whote uppercase font-bold text-white rounded hover:cursor-pointer hover:bg-sky-900 transition-colors"/>
-        </form>
-            )
-        }
-        {
+            {
             confirmPassword && (
                 <Link to="/" className="block my-8 text-slate-600 uppercase text-sm font-bold hover:cursor-pointer hover:text-sky-600 transition-colors text-center">Iniciar sesión</Link>
                 )
              
+            }
+        </form>
+            )
         }
+        
 
     </>
   )
